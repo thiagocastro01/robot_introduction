@@ -27,7 +27,6 @@ steps:
       # Write your commands here
       
       robot -d ./logs -x output-xunit.xml --variable browser:headlesschrome  ./
-      # pabot --processes 7 -d ./logs -x output-xunit.xml --variable browser:${{ parameters.browser }} ${{ parameters.featureToRun }}
 
   continueOnError: true    
   displayName: 'Rodando os testes'
